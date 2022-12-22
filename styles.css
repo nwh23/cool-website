@@ -1,0 +1,48 @@
+html, body {
+    height: 100%;
+    background-color: aquamarine;
+}
+
+.title {
+    color: red;
+}
+
+.dancing {
+    animation: dance 4s infinite;
+}
+
+
+
+.parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.child {
+    border: 1px;
+}
+
+@keyframes dance {
+    25% {
+        transform: rotate(-90deg);
+        color: blueviolet;
+    }
+
+    50% {
+        transform: rotate(0deg);
+        color: teal;
+   
+    }
+
+    75% {
+        transform: rotate(90deg);
+        color: cadetblue;
+    }
+
+    100% {
+        transform: rotate(0deg);
+        color: yellow;
+    }
+}
+
